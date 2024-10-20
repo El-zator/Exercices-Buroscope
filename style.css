@@ -1,38 +1,33 @@
-title 
+.box 
 {
-    font-style: italic;
-    size: 10px;
+  width: 300px; /* Largeur de la boîte */
+  height: 100px; /* Hauteur de la boîte */
+  margin-bottom: 20px; /* Espacement entre les boîtes */
+  background-color: lightblue; /* Couleur de fond */
+  color: white;
+  text-align: center; /* Centrer le texte horizontalement */
+  line-height: 100px; /* Centrer le texte verticalement */
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  border-radius: 10px; /* Coins arrondis */
+  border: 3px, blue, dashed;
 }
 
-.box
+.box:first-child 
 {
-    width: 250px;
-    height: 100px;
-    background-color: rgb(228, 234, 236);
-    border:1px, solid, red;
-    margin: 5px;
-    float: left; /* Pour aligner les boîtes horizontalement */
-    border-radius: 5px; /* Ajoute des coins arrondis */
+    padding: 1rem;
+    margin-right: 1rem, 50%;
+
 }
 
-#box
+.box:nth-child(2)
 {
-    width: 250px;
-    height: 100px;
-    background-color: rgb(228, 234, 236);
-    border:1px, solid, blue;
-    margin: 5px;
-    float: left; /* Pour aligner les boîtes horizontalement */
-    border-radius: 5px; /* Ajoute des coins arrondis */
+    padding: auto, 50%;
 }
 
-.box.special
+.box:last-child
 {
-    width: 250px;
-    height: 100px;
-    background-color: rgb(228, 234, 236);
-    border:1px, solid, yellow;
-    margin: 5px;
-    float: left; /* Pour aligner les boîtes horizontalement */
-    border-radius: 5px; /* Ajoute des coins arrondis */
+    margin-top: 5rem;
+    margin-left: auto;
+    padding: 3rem;
 }
