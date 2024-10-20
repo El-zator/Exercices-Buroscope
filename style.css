@@ -1,33 +1,38 @@
-.box 
-{
-  width: 300px; /* Largeur de la boîte */
-  height: 100px; /* Hauteur de la boîte */
-  margin-bottom: 20px; /* Espacement entre les boîtes */
-  background-color: lightblue; /* Couleur de fond */
-  color: white;
-  text-align: center; /* Centrer le texte horizontalement */
-  line-height: 100px; /* Centrer le texte verticalement */
-  font-family: Arial, sans-serif;
-  font-size: 18px;
-  border-radius: 10px; /* Coins arrondis */
-  border: 3px, blue, dashed;
+.box {
+    width: 300px; /* Largeur de la boîte */
+    height: 300px; /* Hauteur de la boîte */
+    margin-bottom: 20px; /* Espacement entre les boîtes */
+    background-color: lightblue; /* Couleur de fond */
+    color: black;
+    text-align: center; /* Centrer le texte horizontalement */
+    line-height: 100px; /* Centrer le texte verticalement */
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    border-radius: 10px; /* Coins arrondis */
+    margin-right: 10px;
+    display: inline-block;
 }
-
-.box:first-child 
+.box:first-child
 {
-    padding: 1rem;
-    margin-right: 1rem, 50%;
-
+    background: rgb(196,114,20);
+    background: linear-gradient(90deg, rgba(196,114,20,1) 38%, rgba(21,38,180,0.7091211484593838) 67%);
 }
 
 .box:nth-child(2)
 {
-    padding: auto, 50%;
+    background-image: url(fondé.jpg);
+    background-size: cover;
+    width: 600px;
 }
 
 .box:last-child
 {
-    margin-top: 5rem;
-    margin-left: auto;
-    padding: 3rem;
+    background-image: url(bg.gif);
+    background-repeat: repeat;
+    width: 915px;
 }
+
+
+
+
+    
