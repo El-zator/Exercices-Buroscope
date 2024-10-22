@@ -1,12 +1,87 @@
+body {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
 .box {
-    width: 300px; /* Largeur de la boîte */
-    height: 100px; /* Hauteur de la boîte */
-    margin-bottom: 20px; /* Espacement entre les boîtes */
-    background-color: lightblue; /* Couleur de fond */
-    color: white;
-    text-align: center; /* Centrer le texte horizontalement */
-    line-height: 100px; /* Centrer le texte verticalement */
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    border-radius: 10px; /* Coins arrondis */
+  width: 21vw; /* Largeur de la boîte */
+  height: 14vh; /* Hauteur de la boîte */
+  margin-bottom: 2rem; /* Espacement entre les boîtes */
+  margin: 0.5rem;
+  background-color: rgb(107, 198, 228); /* Couleur de fond */
+  color: white;
+  text-align: center; /* Centrer le texte horizontalement */
+  line-height: 10vh; /* Centrer le texte verticalement */
+  font-family: Arial, sans-serif;
+  font-size: 1.8rem;
+  border-radius: 1rem; /* Coins arrondis */
+  display: flex;
+  justify-content: space-around;
+}
+/*boite interieur*/
+.box1 {
+  width: 4vw; /* Largeur de la boîte */
+  height: 4vh; /* Hauteur de la boîte */
+  margin-bottom: 0.2rem; /* Espacement entre les boîtes */
+  margin: 0.5rem;
+  background-color: rgb(229, 241, 51); /* Couleur de fond */
+  font-size: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+/*boite le plus à l'intérieur*/
+.box2 {
+  width: 6.55rem;
+  height: 0.75rem;
+  background-color: rgb(0, 0, 0);
+  margin: 0.2rem;
+  font-size: 0.2rem;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+/*1ere boite*/
+.box:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/*2ième boite*/
+.box:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/*3ième boite*/
+.box:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*4ième boite*/
+.box:nth-child(4) {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/*ajustement taille*/
+.box:nth-child(4) .box1 {
+  flex-grow: 1;
+  flex-basis: calc(33.33% - 1rem);
+  height: calc(50% - 1rem);
+  margin: 0.5rem;
 }
