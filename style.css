@@ -1,38 +1,85 @@
-title 
-{
+.arvo-regular {
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+  .arvo-bold {
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+  .arvo-regular-italic {
+    font-family: "Arvo", serif;
+    font-weight: 400;
     font-style: italic;
-    size: 10px;
+}
+  
+  .arvo-bold-italic {
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    font-style: italic;
 }
 
-.box
-{
-    width: 250px;
-    height: 100px;
-    background-color: rgb(228, 234, 236);
-    border:1px, solid, red;
-    margin: 5px;
-    float: left; /* Pour aligner les boîtes horizontalement */
-    border-radius: 5px; /* Ajoute des coins arrondis */
+/*Image dans la barre*/
+
+.barre {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-image: url('lavande.jpg'); 
+    background-size: cover; /* L'image couvre tout le conteneur */
+    background-position: center; /* Centrer l'image */
+    background-repeat: no-repeat; /* Empêcher la répétition de l'image */
+    height: 300px; 
+    width: 100%; 
+    text-align: center;
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+/*Texte*/
+h1 {
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: xx-large;
 }
 
-#box
-{
-    width: 250px;
-    height: 100px;
-    background-color: rgb(228, 234, 236);
-    border:1px, solid, blue;
-    margin: 5px;
-    float: left; /* Pour aligner les boîtes horizontalement */
-    border-radius: 5px; /* Ajoute des coins arrondis */
+h2 {
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: larger;
+}
+.barre h1, .barre h2 {
+    margin: 0.5rem 0; 
 }
 
-.box.special
-{
-    width: 250px;
-    height: 100px;
-    background-color: rgb(228, 234, 236);
-    border:1px, solid, yellow;
-    margin: 5px;
-    float: left; /* Pour aligner les boîtes horizontalement */
-    border-radius: 5px; /* Ajoute des coins arrondis */
+/*Bouton*/
+
+.login {
+    background-color: rgba(108, 32, 207, 0.534);
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+    color: black;
+    border-radius: 0.5rem; 
+    padding: 3.5rem 4,5rem; 
+    animation: clignoter 2s infinite; /* Animation pour faire clignoter */
+}
+
+/* Définition de l'animation */
+@keyframes clignoter {
+    0% {
+        background-color: rgba(108, 32, 207, 0.8); /* Couleur initiale */
+    }
+    50% {
+        background-color: rgb(255, 255, 255); /* Couleur intermédiaire (rouge vif par exemple) */
+    }
+    100% {
+        background-color: rgba(108, 32, 207, 0.8); /* Retour à la couleur initiale */
+    }
 }
