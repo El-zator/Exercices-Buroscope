@@ -1,38 +1,49 @@
-title 
-{
-    font-style: italic;
-    size: 10px;
+/*corps du site*/
+
+.body{
+    padding: 1rem; /*espace entre la bordure et le contenu*/
+    width: calc(100vw - 4rem); /*largeur de la fenêtre en viewport*/
+    height: calc(100vh - 4rem); /*hauteur de la fenêtre en viewport*/
 }
 
-.box
-{
-    width: 250px;
-    height: 100px;
-    background-color: rgb(228, 234, 236);
-    border:1px, solid, red;
-    margin: 5px;
-    float: left; /* Pour aligner les boîtes horizontalement */
-    border-radius: 5px; /* Ajoute des coins arrondis */
+/* GRID */
+
+.grid{
+    width: 100%; /*largeur de la fenêtre en % pour correspondre au body*/
+    display: grid; /*appele de la fonction grid*/
+    grid-template-columns: repeat(3, 1fr); /*nbr de collonne ainsi que leur taille*/
+    gap: 0.5rem; /*espacement entre*/
 }
 
-#box
-{
-    width: 250px;
-    height: 100px;
-    background-color: rgb(228, 234, 236);
-    border:1px, solid, blue;
-    margin: 5px;
-    float: left; /* Pour aligner les boîtes horizontalement */
-    border-radius: 5px; /* Ajoute des coins arrondis */
+.color{
+    height: 6rem; /*hauteur de la case*/
+    border-radius: 0.5rem;
 }
 
-.box.special
-{
-    width: 250px;
-    height: 100px;
-    background-color: rgb(228, 234, 236);
-    border:1px, solid, yellow;
-    margin: 5px;
-    float: left; /* Pour aligner les boîtes horizontalement */
-    border-radius: 5px; /* Ajoute des coins arrondis */
+/* COULEUR */
+
+.--color1{
+    background-color: crimson;
+}
+
+.--color2{
+    background-color: black;
+}
+
+.--color3{
+    background-color: darkblue;
+}
+
+.--color4{
+    background-color: goldenrod;
+}
+
+.--color5{
+    background-color: purple;
+    grid-column: 2 /span 2;
+}
+
+.--color6{
+    background-color: hotpink;
+    grid-column: 1 /span 3;
 }
